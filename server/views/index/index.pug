@@ -1,0 +1,32 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em adventure
+
+block content
+    main.container.mt-5
+        h2.text-center.mb-5
+        .row.mb-5
+            .col-md-6
+                p Phasellus sagittis orci lectus, a vestibulum lacus eleifend id. Aenean tincidunt augue nibh, eget lobortis neque facilisis eu. Aliquam blandit pharetra arcu, id porta risus venenatis eu. 
+                
+                p Pellentesque mauris justo, pulvinar non convallis sed, porttitor in dui. Proin rutrum lectus eget sodales tincidunt. Proin et porta diam. Nunc fermentum felis malesuada finibus fringilla. 
+
+            .col-md-6
+                img(src='/img/about_home.jpg', alt="About Us Image", class="img-fluid")
+    .container
+        h2.text-center.mb-5 Upcoming Travels
+        include ../layout/partials/travels
+    .discount
+        .container
+            .row
+                .col-md-6
+                    .content
+                        h3 5% OFF
+                        p.title Travel to Canada
+                        p.date 20th August 2019 - 28th August 2019
+                        p.price $2,500 USD
+    .container
+        h2.text-center.my-5 Testimonials
+        include ../layout/partials/testimonials
